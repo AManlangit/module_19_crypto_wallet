@@ -37,6 +37,6 @@ To use this application, follow these steps:
 
 Include screenshots of the application interface and any relevant transactions or balances from your Ethereum account.
 
-![Ganache Account](Starter_Code\Images\ganche_account_after_transaction.png "Ganache Account")
+![Ganache Account](Starter_Code/Images/ganche_account_after_transaction.png "Ganache Account")
 
-![Payment Transaction](Starter_Code\Images\ganche_transaction.png "Payment Transaction")
+![Payment Transaction](Starter_Code/Images/ganche_transaction.png "Payment Transaction")
