@@ -63,13 +63,16 @@ def send_transaction(w3, account, to, wage):
         {"to": to, "from": account.address, "value": value}
     )
 
+    # Set a higher gas price to ensure it's higher than the block's baseFeePerGas
+    gas_price = w3.toWei("50", "gwei")  # Example: 50 Gwei
+
     # Construct a raw transaction
     raw_tx = {
         "to": to,
         "from": account.address,
         "value": value,
         "gas": gasEstimate,
-        "gasPrice": 0,
+        "gasPrice": gas_price,
         "nonce": w3.eth.getTransactionCount(account.address),
     }
 
